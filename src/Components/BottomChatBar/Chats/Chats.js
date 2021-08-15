@@ -11,6 +11,7 @@ const Chats = (props) => {
             <Chat
               key={user.id}
               startPrivateChatHandler={props.startPrivateChatHandler}
+              profileImageURL={user.userData.profileImageURL}
               endPrivateChatHandler={props.endPrivateChatHandler}
               firstName={user.userData.firstName}
               lastName={user.userData.lastName}

@@ -13,7 +13,8 @@ const Chat = (props) => {
   return (
     <li className={classes.Chat}>
       <Avatar
-        style={{ width: "25px", height: "25px" }}
+        style={{ width: "40px", height: "40px" }}
+        image={props.profileImageURL}
         name={`${props.firstName} ${props.lastName}`}
         onClick={() => {
           props.startPrivateChatHandler(props.userID);
@@ -28,12 +29,18 @@ const Chat = (props) => {
       {props.chatOpen && (
         <div className={classes.Message__Box}>
           <div className={classes.Top}>
-            <Link
-              className={classes.ProfileLink}
-              to={`/users/account/${props.userID.replace(" ", "-")}`}
-            >
-              <p>{`${props.firstName} ${props.lastName}`}</p>
-            </Link>
+            <div className={classes.Avatar}>
+              <Avatar
+                style={{ width: "40px", height: "40px" }}
+                image={props.profileImageURL}
+              />
+              <Link
+                className={classes.ProfileLink}
+                to={`/users/account/${props.userID.replace(" ", "-")}`}
+              >
+                <p>{`${props.firstName} ${props.lastName}`}</p>
+              </Link>
+            </div>
             <div className={classes.Buttons}>
               <Button
                 onClick={() => {

@@ -13,7 +13,11 @@ const OnlineUser = (props) => {
         handleClick(props.userID);
       }}
     >
-      <Avatar name={`${props.firstName} ${props.lastName}`} />
+      <Avatar
+        style={{ width: "50px", height: "50px" }}
+        image={props.profileImageURL}
+        name={`${props.firstName} ${props.lastName}`}
+      />
       <div className={classes.OnlineUser__Status}></div>
     </li>
   );

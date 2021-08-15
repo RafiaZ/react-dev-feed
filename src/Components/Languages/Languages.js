@@ -7,7 +7,7 @@ const Languages = (props) => {
   return (
     <div className={classes.Languages}>
       {user.userData.toolbox.map((tool) => (
-        <Language label={tool.label} />
+        <Language key={tool.label} label={tool.label} />
       ))}
     </div>
   );

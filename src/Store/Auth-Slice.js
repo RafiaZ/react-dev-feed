@@ -9,6 +9,10 @@ const AuthSlice = createSlice({
       email: "test@test.com",
       password: "AwSd",
       userData: {
+        profileImageURL:
+          "https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80",
+        coverImageURL:
+          "https://images.unsplash.com/photo-1476522465286-b5b94c729d2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1899&q=80",
         firstName: "Test",
         lastName: "Account",
         DOB: new Date("12/08/1995").toISOString(),

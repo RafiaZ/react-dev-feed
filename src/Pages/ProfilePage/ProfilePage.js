@@ -11,11 +11,15 @@ const ProfilePage = (props) => {
   return (
     <div className={classes.ProfilePage}>
       <div className={classes.ProfilePage__ProfileData}>
-        <CoverImage />
+        <CoverImage image={user.userData.coverImageURL} />
         <section className={classes.Profile__Top__Container}>
           <div className={classes.Profile__Top__Data}>
             <div className={classes.Profile__Top__Data__Left}>
-              <Avatar className={classes.Avatar__Image} />
+              <Avatar
+                style={{ width: "160px", height: "160px" }}
+                image={user.userData.profileImageURL}
+                className={classes.Avatar__Image}
+              />
               <ProfileData user={user} />
             </div>
             <div className={classes.Profile__Top__Data__Right}>

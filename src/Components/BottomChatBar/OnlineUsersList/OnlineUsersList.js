@@ -11,6 +11,7 @@ const OnlineUsersList = (props) => {
           startPrivateChatHandler={props.startPrivateChatHandler}
           firstName={user.userData.firstName}
           lastName={user.userData.lastName}
+          profileImageURL={user.userData.profileImageURL}
           userID={user.id}
         />
       ))}
