@@ -1,0 +1,16 @@
+.ProfileData {
+  margin-left: 15px;
+  .FriendsAmount {
+    font-size: 0.8rem;
+  }
+  .Friends {
+    display: flex;
+    img {
+      width: 30px;
+      height: 30px;
+      border: 1px solid white;
+      box-shadow: 1px 1px 5px 1px #ccc;
+      margin-left: -5px;
+    }
+  }
+}
