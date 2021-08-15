@@ -1,0 +1,17 @@
+.OnlineUser {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0.3rem;
+  margin-bottom: 10px;
+  &:hover {
+    cursor: pointer;
+    background: whitesmoke;
+  }
+  .OnlineUser__Status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: green;
+  }
+}

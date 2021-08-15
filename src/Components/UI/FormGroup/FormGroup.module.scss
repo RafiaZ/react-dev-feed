@@ -1,0 +1,17 @@
+.FormGroup {
+  border-radius: 8px;
+  margin: 10px 0;
+  input {
+    background: whitesmoke;
+    width: 100%;
+    display: block;
+    font-family: inherit;
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    &:focus {
+      border: 2px solid #ccc;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.AddToPost {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  button {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    margin: 0 10px;
+    &:hover {
+      transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+      background: #ccc;
+      transform: scale(1.2);
+      color: white;
+    }
+    .Icon {
+      margin: 0 10px;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.SettingsModal {
+  background: white;
+  .SettingsGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+}
+
+.Toolbox {
+  .Tools {
+    display: flex;
+    flex-wrap: wrap;
+    .tool__item {
+      width: 100px;
+      position: relative;
+      font-size: 0.8rem;
+      background: whitesmoke;
+      padding: 0.3rem 1rem;
+      margin: 5px;
+
+      .overLay {
+        top: 0;
+        right: 0;
+        position: absolute;
+        button {
+          font-size: 0.5rem;
+          height: 12px;
+          width: 12px;
+          border: none;
+          background: red;
+          align-items: center;
+          display: flex;
+          color: white;
+          justify-content: center;
+          border-bottom-left-radius: 8px;
+        }
+      }
+    }
+  }
+}

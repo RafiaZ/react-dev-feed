@@ -1,0 +1,17 @@
+.PostComment {
+  margin: 10px 0;
+  display: flex;
+  .PostComment__Data {
+    margin-left: 10px;
+    background: rgb(243, 241, 241);
+    border-radius: 8px;
+    padding: 0.5rem;
+    .Author {
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+    .Content {
+      font-size: 0.7rem;
+    }
+  }
+}

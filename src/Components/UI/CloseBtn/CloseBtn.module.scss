@@ -1,0 +1,18 @@
+.Close {
+  padding: 0.3rem;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    .Close__Icon {
+      color: black;
+    }
+  }
+  .Close__Icon {
+    color: #ccc;
+  }
+}

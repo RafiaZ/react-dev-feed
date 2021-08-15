@@ -1,0 +1,54 @@
+.Modal {
+  width: 95%;
+  max-width: 500px;
+  position: fixed;
+  z-index: 101;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50vw;
+  top: 50vh;
+  border-radius: 7px;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 3px 1px #ccc;
+}
+
+.Modal__Header {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ModalOpen {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.ModalClosed {
+  animation: slideOut 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 60vh;
+  }
+  100% {
+    opacity: 1;
+    top: 50vh;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    top: 50vh;
+  }
+  50% {
+    top: 60vh;
+  }
+  100% {
+    opacity: 0;
+    top: 0;
+  }
+}

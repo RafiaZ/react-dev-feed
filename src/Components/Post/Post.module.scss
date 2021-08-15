@@ -1,0 +1,38 @@
+.Post {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px 0 #ccc;
+  margin-bottom: 40px;
+  padding: 0.5rem;
+  .Post__Top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Icon {
+      padding: 0.2rem;
+      border-radius: 50%;
+      font-size: 25px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .Post__Content {
+    font-size: 0.9rem;
+    max-height: 400px;
+    overflow: auto;
+    padding: 0.5rem 0;
+    p {
+      white-space: pre-wrap;
+    }
+  }
+}
+
+.Post__Top__Author {
+  display: flex;
+}
+
+.Active {
+  background: rgb(245, 238, 238);
+}

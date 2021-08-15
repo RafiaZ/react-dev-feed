@@ -1,0 +1,21 @@
+.Chats {
+  width: 80%;
+  height: 100%;
+  list-style: none;
+  justify-content: spa;
+  align-items: center;
+  display: flex;
+}
+
+.OverFlow {
+  margin-left: 10px;
+  background: red;
+  border-radius: 50%;
+  span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

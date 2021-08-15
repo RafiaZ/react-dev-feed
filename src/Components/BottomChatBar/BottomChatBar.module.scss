@@ -1,0 +1,32 @@
+.BottomChatBar {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background: whitesmoke;
+
+  box-shadow: 1px 1px 2px 1px #ccc;
+  @media (max-width: 950px) {
+    display: none;
+  }
+  .Container {
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 101;
+    height: 50px;
+    align-items: center;
+    display: flex;
+
+    .BottomChatBar__FriendsOnline {
+      position: relative;
+      height: 100%;
+      width: 250px;
+      align-items: center;
+      padding: 0 0.5rem;
+      justify-content: space-between;
+      box-shadow: 1px 1px 1px 1px #ccc;
+      display: flex;
+    }
+  }
+}

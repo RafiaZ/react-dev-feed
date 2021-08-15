@@ -1,0 +1,13 @@
+.Button {
+  display: block;
+  font-family: inherit;
+  &:hover {
+    cursor: pointer;
+  }
+  &:disabled {
+    opacity: 0.2;
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}

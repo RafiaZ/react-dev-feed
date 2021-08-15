@@ -1,0 +1,17 @@
+.Post__Data {
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  p {
+    span {
+      padding-right: 3px;
+    }
+  }
+}
+
+.Likes {
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

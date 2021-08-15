@@ -1,0 +1,39 @@
+.Post__Actions {
+  padding: 0.5rem 0;
+  .Post__Actions__List {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    li {
+      padding: 0.5rem;
+      width: 100%;
+      &:hover {
+        background: whitesmoke;
+      }
+      button {
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+
+        color: rgb(92, 78, 78);
+        background: none;
+        border: none;
+        width: 100%;
+        transform: scale(1);
+
+        .Icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.Liked {
+  color: rgb(67, 54, 185) !important;
+  .Icon {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+
+    transform: rotate(-12deg) scale(1.4);
+  }
+}

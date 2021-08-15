@@ -1,0 +1,13 @@
+.Avatar {
+  display: flex;
+  align-items: center;
+  .Avatar__Image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  p {
+    font-size: 0.9rem;
+    margin-left: 10px;
+  }
+}

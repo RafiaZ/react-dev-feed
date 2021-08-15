@@ -1,0 +1,49 @@
+.Dropdown__Menu {
+  box-shadow: 1px 1px 1px 1px #ccc;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  font-size: 0.9rem;
+  z-index: 101;
+  .Dropdown__Items {
+    list-style: none;
+    li {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+
+      &:hover {
+        cursor: pointer;
+        background: whitesmoke;
+      }
+    }
+  }
+}
+
+.Dropdown__Open {
+  animation: slideOut 0.3s ease-out forwards;
+}
+.Dropdown__Closed {
+  animation: slideIn 0.3s ease-out forwards;
+}
+@keyframes slideOut {
+  0% {
+  }
+
+  100% {
+    width: 100px;
+
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+  }
+  100% {
+    width: 1px;
+    opacity: 0;
+  }
+}
