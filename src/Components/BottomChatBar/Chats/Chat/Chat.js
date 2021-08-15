@@ -3,6 +3,7 @@ import classes from "./Chat.module.scss";
 import Avatar from "../../../UI/Avatar/Avatar";
 import CloseBtn from "../../../UI/CloseBtn/CloseBtn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faGripLines,
   faWindowMinimize,
@@ -27,7 +28,12 @@ const Chat = (props) => {
       {props.chatOpen && (
         <div className={classes.Message__Box}>
           <div className={classes.Top}>
-            <p>{`${props.firstName} ${props.lastName}`}</p>
+            <Link
+              className={classes.ProfileLink}
+              to={`/users/account/${props.userID.replace(" ", "-")}`}
+            >
+              <p>{`${props.firstName} ${props.lastName}`}</p>
+            </Link>
             <div className={classes.Buttons}>
               <Button
                 onClick={() => {

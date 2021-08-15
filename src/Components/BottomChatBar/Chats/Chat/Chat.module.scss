@@ -21,15 +21,13 @@
 }
 
 .Message__Box {
-  box-shadow: -1px -1px 3px 1px #ccc;
+  box-shadow: 1px -2px 3px 1px #ccc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
   top: -400px;
   left: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   width: 100%;
   height: 400px;
   background: white;
@@ -43,8 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     padding: 0.5rem;
     color: white;
     background: rgb(20, 39, 56);
@@ -110,4 +106,12 @@
   left: 0;
   position: absolute;
   font-size: 0.5rem;
+}
+
+.ProfileLink {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
