@@ -9,6 +9,7 @@ import MainNav from "./Components/MainNav/MainNav";
 import BottomChatBar from "./Components/BottomChatBar/BottomChatBar";
 import SettingsModal from "./Components/SettingsModal/SettingsModal";
 import Transition from "react-transition-group/Transition";
+import UserAccountPage from "./Pages/UserAccountPage/UserAccountPage";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
@@ -60,6 +61,11 @@ function App() {
           component={NewsFeed}
         />
         <ProtectedRoute exact path="/profile" component={ProfilePage} />
+        <ProtectedRoute
+          exact
+          path="/users/account/:userID"
+          component={UserAccountPage}
+        />
       </Switch>
     </Fragment>
   );
