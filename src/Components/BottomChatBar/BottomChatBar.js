@@ -44,12 +44,9 @@ const BottomChatBar = (props) => {
   };
 
   const endPrivateChatHandler = (userID) => {
-    console.log("HELLO!");
     const index = activeChats.findIndex((user) => user.id === userID);
 
     const updatedChats = [...activeChats];
-
-    console.log(index);
 
     updatedChats.splice(index, 1);
 

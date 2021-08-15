@@ -1,0 +1,43 @@
+.ProfilePage {
+  .ProfilePage__ProfileData {
+    background: whitesmoke;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+
+    .Profile__Top__Container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      position: relative;
+      margin-top: -20px;
+    }
+  }
+}
+
+.Profile__Top__Data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 460px) {
+    flex-direction: column;
+  }
+  .Profile__Top__Data__Left {
+    display: flex;
+    align-items: center;
+  }
+
+  .Profile__Top__Data__Right {
+    text-align: center;
+    font-size: 0.8rem;
+    p {
+      margin: 5px 0;
+    }
+  }
+  .Avatar__Image {
+    img {
+      border: 5px solid white;
+      width: 120px;
+      height: 120px;
+    }
+  }
+}

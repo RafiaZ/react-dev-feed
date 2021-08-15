@@ -25,8 +25,16 @@ function makeArray(length) {
   for (let i = 0; i < length; i++) {
     arr.push({
       id: "user " + i,
-      firstName: FIRST_NAMES[Math.floor(Math.random() * FIRST_NAMES.length)],
-      lastName: LAST_NAMES[Math.floor(Math.random() * LAST_NAMES.length)],
+      userData: {
+        firstName: FIRST_NAMES[Math.floor(Math.random() * FIRST_NAMES.length)],
+        lastName: LAST_NAMES[Math.floor(Math.random() * LAST_NAMES.length)],
+        fRequests: [],
+        friends: [],
+        toolbox: [],
+        likes: ["1", "2", "3", "4"],
+        reputation: Math.floor(Math.random() * 15533),
+        comments: Math.floor(Math.random() * 5223),
+      },
     });
   }
   return arr;

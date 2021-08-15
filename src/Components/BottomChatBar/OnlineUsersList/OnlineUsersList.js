@@ -9,8 +9,8 @@ const OnlineUsersList = (props) => {
         <OnlineUser
           key={user.id}
           startPrivateChatHandler={props.startPrivateChatHandler}
-          firstName={user.firstName}
-          lastName={user.lastName}
+          firstName={user.userData.firstName}
+          lastName={user.userData.lastName}
           userID={user.id}
         />
       ))}

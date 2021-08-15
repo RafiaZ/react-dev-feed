@@ -12,8 +12,8 @@ const Chats = (props) => {
               key={user.id}
               startPrivateChatHandler={props.startPrivateChatHandler}
               endPrivateChatHandler={props.endPrivateChatHandler}
-              firstName={user.firstName}
-              lastName={user.lastName}
+              firstName={user.userData.firstName}
+              lastName={user.userData.lastName}
               chatOpen={user.showingChat}
               userID={user.id}
             />
