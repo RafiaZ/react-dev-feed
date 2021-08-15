@@ -11,7 +11,7 @@ const ToggleSlider = (props) => {
           className={`${classes.ToggleSliderButton}`}
           style={{
             left: props.active ? "0" : "calc(100% - 25px)",
-            background: props.active ? "green" : "red",
+            background: props.active ? "rgb(20, 39, 56)" : "coral",
           }}
         >
           {props.active ? "On" : "Off"}

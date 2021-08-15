@@ -1,22 +1,24 @@
 .ToggleSlider {
   position: relative;
   height: 25px;
-  border-radius: 28px;
   width: 70px;
   background: whitesmoke;
+  color: white;
   transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
 
   .ToggleSliderButton {
     position: absolute;
     width: 25px;
     background: rgb(126, 119, 238);
-    border-radius: 50%;
     font-size: 0.7rem;
     height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
