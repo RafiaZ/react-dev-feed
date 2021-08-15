@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import classes from "./BottomChatBar.module.scss";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Button from "../UI/Button/Button";
 import OnlineUsersList from "./OnlineUsersList/OnlineUsersList";
 import Chats from "./Chats/Chats";
 const BottomChatBar = (props) => {
-  const dispatch = useDispatch();
   const users = useSelector((state) => state.users.users);
   const [showingOnlineUsers, setShowingOnlineUsers] = useState(false);
   const [activeChats, setActiveChats] = useState([]); //initialy empty (no chats are open)

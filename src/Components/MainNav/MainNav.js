@@ -1,12 +1,7 @@
 import React from "react";
 import classes from "./MainNav.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faUser,
-  faCog,
-  faInbox,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faCog } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
 const MainNav = (props) => {
@@ -40,13 +35,18 @@ const MainNav = (props) => {
           return (
             <>
               {link.type === "link" ? (
-                <NavLink className={classes.MainNav__List__Link} to={link.to}>
+                <NavLink
+                  key={Math.random()}
+                  className={classes.MainNav__List__Link}
+                  to={link.to}
+                >
                   <li>
                     <FontAwesomeIcon icon={link.icon} />
                   </li>
                 </NavLink>
               ) : (
                 <li
+                  key={Math.random()}
                   onClick={link.handleClick}
                   className={classes.MainNav__List__Link}
                 >

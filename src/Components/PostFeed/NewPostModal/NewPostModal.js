@@ -1,14 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import classes from "./NewPostModal.module.scss";
 import Transition from "react-transition-group/Transition";
 import Modal from "../../UI/Modal/Modal";
 import { useDispatch } from "react-redux";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCode,
-  faImage,
-  faLocationArrow,
-} from "@fortawesome/free-solid-svg-icons";
+
 import { post_Actions } from "../../../Store/Post-Slice";
 import Button from "../../UI/Button/Button";
 import AddToPost from "./AddToPost";

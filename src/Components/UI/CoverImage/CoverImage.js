@@ -11,7 +11,7 @@ const CoverImage = (props) => {
           <input type="file" id="coverImage" hidden />
         </>
       ) : (
-        <img src={image} />
+        <img src={image} alt={"cover"} />
       )}
     </section>
   );

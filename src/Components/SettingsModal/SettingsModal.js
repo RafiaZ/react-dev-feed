@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Modal from "../UI/Modal/Modal";
 import ToggleSlider from "../UI/ToggleSlider/ToggleSlider";
 import classes from "./SettingsModal.module.scss";
-import Button from "../UI/Button/Button";
 import { AuthActions } from "../../Store/Auth-Slice";
 import Select from "react-select";
 

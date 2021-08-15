@@ -3,8 +3,6 @@ import classes from "./PostFeed.module.scss";
 import Posts from "./Posts/Posts";
 import NewPostButton from "./NewPostButton/NewPostButton";
 import NewPostModal from "./NewPostModal/NewPostModal";
-import Transition from "react-transition-group/Transition";
-import ToggleSlider from "../UI/ToggleSlider/ToggleSlider";
 const PostFeed = (props) => {
   const [isWritingPost, setIsWritingPost] = useState(false);
 

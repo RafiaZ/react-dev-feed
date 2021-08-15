@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./Avatar.module.scss";
 
 const Avatar = (props) => {
-  console.log(props);
   return (
     <div
       onClick={props.onClick}
@@ -23,4 +22,4 @@ const Avatar = (props) => {
   );
 };
 
-export default Avatar;
+export default React.memo(Avatar);

@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./Chats.module.scss";
 import Chat from "./Chat/Chat";
-import { useDispatch } from "react-redux";
 const Chats = (props) => {
   return (
     <ul className={classes.Chats}>

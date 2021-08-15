@@ -46,6 +46,22 @@ const PROFILE__IMAGES = [
   "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
 ];
 
+const OPTIONS = [
+  { value: "JavaScript", label: "JavaScript" },
+  { value: "ReactJS", label: "ReactJS" },
+  { value: "NodeJS", label: "NodeJS" },
+  { value: "SQL", label: "SQL" },
+  { value: "ASP.NET", label: "ASP.NET" },
+  { value: "GoLang", label: "GoLang" },
+  { value: "Python", label: "Python" },
+  { value: "Java", label: "Java" },
+  { value: "PHP", label: "PHP" },
+  { value: "React Native", label: "React Native" },
+  { value: "Ruby", label: "Ruby" },
+  { value: "Scala", label: "Scala" },
+  { value: "Swift", label: "Swift" },
+  { value: "TypeScript", label: "TypeScript" },
+];
 function makeArray(length) {
   let arr = [];
   for (let i = 0; i < length; i++) {
@@ -59,7 +75,14 @@ function makeArray(length) {
         coverImageURL: IMAGES[Math.floor(Math.random() * IMAGES.length)],
         fRequests: [],
         friends: [],
-        toolbox: [],
+        toolbox: [
+          OPTIONS[0],
+          OPTIONS[1],
+          OPTIONS[2],
+          OPTIONS[3],
+          OPTIONS[5],
+          OPTIONS[7],
+        ],
         likes: ["1", "2", "3", "4"],
         reputation: Math.floor(Math.random() * 15533),
         comments: Math.floor(Math.random() * 5223),

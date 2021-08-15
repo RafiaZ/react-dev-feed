@@ -4,7 +4,6 @@ import Post from "../../Post/Post";
 import { useSelector } from "react-redux";
 const Posts = (props) => {
   const posts = useSelector((state) => state.posts.posts);
-  console.log(posts);
   return (
     <section className={classes.Posts}>
       <ul>

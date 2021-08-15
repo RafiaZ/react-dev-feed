@@ -2,12 +2,8 @@ import React from "react";
 import classes from "./Chat.module.scss";
 import Avatar from "../../../UI/Avatar/Avatar";
 import CloseBtn from "../../../UI/CloseBtn/CloseBtn";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import {
-  faGripLines,
-  faWindowMinimize,
-} from "@fortawesome/free-solid-svg-icons";
+
 import Button from "../../../UI/Button/Button";
 const Chat = (props) => {
   return (
