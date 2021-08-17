@@ -8,7 +8,6 @@ import Homepage from "./Pages/Homepage/Homepage";
 import MainNav from "./Components/MainNav/MainNav";
 import BottomChatBar from "./Components/BottomChatBar/BottomChatBar";
 import SettingsModal from "./Components/SettingsModal/SettingsModal";
-import Transition from "react-transition-group/Transition";
 import UserAccountPage from "./Pages/UserAccountPage/UserAccountPage";
 
 function App() {
@@ -37,20 +36,16 @@ function App() {
       {isLoggedIn && <Redirect to="/news-feed" />}
       {isLoggedIn && <MainNav toggleSettings={toggleSettings} />}
 
-      <Transition in={settings} unmountOnExit timeout={500}>
-        {(state) => (
-          <SettingsModal
-            changeHidingPostsHandler={changeHidingPostsHandler}
-            changeHidingCommentsHandler={changeHidingCommentsHandler}
-            hidingPosts={hidingPosts}
-            hidingComments={hidingComments}
-            show={state}
-            onClick={toggleSettings}
-            settings={settings}
-          />
-        )}
-      </Transition>
-      <BottomChatBar />
+      <SettingsModal
+        changeHidingPostsHandler={changeHidingPostsHandler}
+        changeHidingCommentsHandler={changeHidingCommentsHandler}
+        hidingPosts={hidingPosts}
+        hidingComments={hidingComments}
+        show={settings}
+        onClick={toggleSettings}
+        settings={settings}
+      />
+      {isLoggedIn && <BottomChatBar />}
 
       <Switch>
         <Route exact path="/" component={Homepage} />

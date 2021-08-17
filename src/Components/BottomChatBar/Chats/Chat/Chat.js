@@ -27,7 +27,7 @@ const Chat = (props) => {
           <div className={classes.Top}>
             <div className={classes.Avatar}>
               <Avatar
-                style={{ width: "40px", height: "40px" }}
+                style={{ width: "50px", height: "50px" }}
                 image={props.profileImageURL}
               />
               <Link

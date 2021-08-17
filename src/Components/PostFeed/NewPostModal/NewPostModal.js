@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import classes from "./NewPostModal.module.scss";
-import Transition from "react-transition-group/Transition";
 import Modal from "../../UI/Modal/Modal";
 import { useDispatch } from "react-redux";
 
@@ -24,51 +23,42 @@ const NewPostModal = (props) => {
   };
 
   return (
-    <Transition
-      in={props.isWritingPost}
-      timeout={500}
-      mountOnEnter
-      unmountOnExit
+    <Modal
+      show={props.isWritingPost}
+      header="New Post"
+      onClick={props.toggleIsWritingPostHandler}
+      clearInput={() => {
+        setNewPostContent("");
+      }}
+      className={classes.NewPostModal}
     >
-      {(state) => (
-        <Modal
-          header="New Post"
-          onClick={props.toggleIsWritingPostHandler}
-          clearInput={() => {
-            setNewPostContent("");
+      <form onSubmit={submitNewPostHandler}>
+        <div
+          onClick={(e) => {
+            console.log(e.target.selectionEnd);
           }}
-          show={state}
-          className={classes.NewPostModal}
+          className={classes.NewPostModal__Content}
         >
-          <form onSubmit={submitNewPostHandler}>
-            <div
-              onClick={(e) => {
-                console.log(e.target.selectionEnd);
-              }}
-              className={classes.NewPostModal__Content}
-            >
-              <textarea
-                value={newPostContent}
-                onChange={onNewPostContentChangeHandler}
-                placeholder="Write your comment..."
-              ></textarea>
-            </div>
+          <textarea
+            value={newPostContent}
+            onChange={onNewPostContentChangeHandler}
+            placeholder="Write your comment..."
+          ></textarea>
+        </div>
 
-            <AddToPost />
+        <AddToPost />
 
-            <PostContentCount newPostContent={newPostContent} />
+        <PostContentCount newPostContent={newPostContent} />
 
-            <Button
-              disabled={newPostContent.length <= 0}
-              className={classes.Post__Button}
-              type="submit"
-            >
-              Post
-            </Button>
-          </form>
-        </Modal>
-      )}
-    </Transition>
+        <Button
+          disabled={newPostContent.length <= 0}
+          className={classes.Post__Button}
+          type="submit"
+        >
+          Post
+        </Button>
+      </form>
+    </Modal>
   );
 };
 

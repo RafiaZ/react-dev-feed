@@ -84,7 +84,7 @@ function makeArray(length) {
           OPTIONS[7],
         ],
         likes: ["1", "2", "3", "4"],
-        reputation: Math.floor(Math.random() * 15533),
+        reputation: 0,
         comments: Math.floor(Math.random() * 5223),
       },
     });
